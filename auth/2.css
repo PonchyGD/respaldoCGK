@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+#imagenPrincipal {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Ajusta el radio según tu preferencia */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+#controles {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flecha {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+#puntos {
+    font-size: 20px;
+}
+
+#menu {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.platillo {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.platillo:hover {
+    transform: translateY(-5px);
+}
+
+.platillo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.platillo h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.platillo p {
+    margin: 0;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Estilos para el nombre del empleado */
+#nombre-empleado {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #333; /* Color de texto gris oscuro */
+}
+
+/* Estilos para el botón de Cerrar Sesión */
+#cerrar-sesion {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+#cerrar-sesion:hover {
+    background-color: #0056b3; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+#mensaje-alm {
+    text-align: center;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

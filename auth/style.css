@@ -1,0 +1,90 @@
+#imagenPrincipal {
+    width: 100%;
+    max-height: 400px; /* Tamaño más alto */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al agrandar la imagen principal */
+    border-radius: 20px;
+}
+
+#controles {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.flecha {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+#puntos {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.punto {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.puntoActivo {
+    background-color: #333;
+}
+
+#miniaturas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.miniatura {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al agrandar la miniatura */
+    border-radius: 20px;
+}
+
+.miniatura:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+}
+
+#menu {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.platillo {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.platillo:hover {
+    transform: scale(1.05);
+}
+
+.platillo img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
